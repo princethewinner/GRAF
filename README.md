@@ -1,6 +1,10 @@
 # GRAF
 Implementation for GRAF paper
 
+# Dependency
+1. C++11
+2. Python 3.7
+
 # Run command
 ```bash
 ./test_build.sh

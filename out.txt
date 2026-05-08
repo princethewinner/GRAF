@@ -1,0 +1,1259 @@
+Compiling GRAF.pyx because it changed.
+[1/1] Cythonizing GRAF.pyx
+running build_ext
+building 'GRAFPlaneSearchCPUArray' extension
+gcc -pthread -B /softwares/installed/anaconda/anaconda3/compiler_compat -Wl,--sysroot=/ -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -g -std=c++0x -D__DEBUG_TREE=true -D__DEBUG_HASH=true -fPIC -I. -I/softwares/installed/anaconda/anaconda3/include/python3.7m -c GRAF.cpp -o build/temp.linux-x86_64-3.7/GRAF.o
+gcc -pthread -B /softwares/installed/anaconda/anaconda3/compiler_compat -Wl,--sysroot=/ -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -g -std=c++0x -D__DEBUG_TREE=true -D__DEBUG_HASH=true -fPIC -I. -I/softwares/installed/anaconda/anaconda3/include/python3.7m -c GuidedRandomForest.cpp -o build/temp.linux-x86_64-3.7/GuidedRandomForest.o
+g++ -pthread -shared -B /softwares/installed/anaconda/anaconda3/compiler_compat -L/softwares/installed/anaconda/anaconda3/lib -Wl,-rpath=/softwares/installed/anaconda/anaconda3/lib -Wl,--no-as-needed -Wl,--sysroot=/ -g -std=c++0x -D__DEBUG_TREE=true -D__DEBUG_HASH=true build/temp.linux-x86_64-3.7/GRAF.o build/temp.linux-x86_64-3.7/GuidedRandomForest.o -o /home/prashant/NetBeansProjects/GuidedRandomForestPlaneSearchCPUArray/GRAFPlaneSearchCPUArray.cpython-37m-x86_64-linux-gnu.so
+[DEBUG][93:GuidedRandomForest.cpp]:[__processLabels] Balance Factor 
+2 2 
+[DEBUG][106:GuidedRandomForest.cpp]:[fit] Growing tree 1
+[DEBUG][583:HashTree.hpp]:[fit] Selected dims 0 1 
+[DEBUG][525:HashTree.hpp]:[__hash] Root partition description 
+min values 0.0871293 0.020218397 
+max values 0.94466892 0.92559664 
+mean values 0.52101579 0.62614181 
+probs 0.5 0.5 
+region indexes 0 1 2 3 4 5 6 7 8 9 
+impurities 5
+roi 0.74525209
+height 0
+
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 1
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+0 1 2 3 4 5 6 7 8 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.69899491 0.71512665 
+0.86837256 0.49591239 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.81195808 -0.7629473 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.74525209
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 5 8 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 3 4 6 7 9 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.74525209
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 3 5 8 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 4 6 7 9 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+4.7619048 5 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.69899491 0.71512665 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.81195808
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 2
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+0 2 3 4 6 7 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.44551075 0.89527659 
+0.63877462 0.76939391 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.94604656 -0.97606924 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.5111944
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.37648346
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+0 3 7 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+2 4 6 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.53835961
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.37648346
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+0 2 3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 6 9 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+4.6666667 4.1666667 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.63877462 0.76939391 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.97606924
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 3
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+0 2 3 7 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.51919297 0.85465704 
+0.61313149 0.78998087 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.89264791 -0.89733993 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.45404256
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31182666
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.16403034
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 6 9 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.45860619
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31182666
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.18111056
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 6 9 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+3.6666667 3.6666667 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.51919297 0.85465704 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.89264791
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 0 2 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 3
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+1 5 8 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.73089797 0.68248675 
+0.519558 0.85443518 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.42935279 -0.43861649 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+5 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+1 8 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.65598926
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.43047491
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+5 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+1 8 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.61816912
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.40398914
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+3.3333333 3.3333333 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.73089797 0.68248675 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.42935279
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 5 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 3
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+4 6 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.75859392 0.6515637 
+0.72043437 0.69352312 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-1.0826037 -1.0858772 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+4 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+6 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.22577586
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.48457636
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+4 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+6 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.22532126
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.47818927
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+3 3 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.75859392 0.6515637 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-1.0826037
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 6 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 3
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+3 7 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.75402491 0.65684582 
+0.74300546 0.66928535 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.857436 -0.85871484 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+7 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.25811465
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.18824991
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 9 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+7 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.25643211
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.18763921
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 9 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+2 2 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.75402491 0.65684582 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.857436
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 3 
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 7 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 2
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+1 8 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.63185294 0.77508829 
+0.44760792 0.89422992 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.62169163 -0.62395796 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+8 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+1 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.41716343
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+8 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.3617676
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+1 1 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.63185294 0.77508829 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.62169163
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 8 
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 1 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 1
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+4 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.68353556 0.72991721 
+0.69155136 0.72232729 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-1.0452542 -1.045824 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+0 0 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.68353556 0.72991721 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-1.0452542
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 9 
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 4 
+
+
+[DEBUG][106:GuidedRandomForest.cpp]:[fit] Growing tree 2
+[DEBUG][583:HashTree.hpp]:[fit] Selected dims 2 1 
+[DEBUG][525:HashTree.hpp]:[__hash] Root partition description 
+min values 0.071036058 0.020218397 
+max values 0.97861834 0.92559664 
+mean values 0.59620338 0.62614181 
+probs 0.5 0.5 
+region indexes 0 1 2 3 4 5 6 7 8 9 
+impurities 5
+roi 0.80183783
+height 0
+
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 1
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+0 1 2 3 4 5 6 7 8 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.65758409 0.75338116 
+0.18372424 0.98297782 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.8637773 -0.72502053 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.80183783
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 4 5 7 8 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 3 6 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.80183783
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 5 7 8 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 3 4 6 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+4.1666667 3.2 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.18372424 0.98297782 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.72502053
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 2
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+1 5 7 8 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.7597053 0.65026753 
+0.99764368 0.068608151 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.69686328 -0.59044838 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.57537813
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+5 8 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+1 7 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.57150024
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.32647055
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+4 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 3 6 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.57537813
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+8 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+1 5 7 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.57150024
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.094617183
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 4 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 6 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+2.5 2.6666667 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.7597053 0.65026753 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.69686328
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 5 8 9 
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 4 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 2
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+0 2 3 6 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.73890974 0.67380442 
+0.69769792 0.71639208 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-1.118457 -1.1215879 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.069923705
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.29325431
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26039274
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+0 3 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+2 6 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.069923705
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.30693007
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26039274
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+0 3 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+2 6 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+2 2 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.73890974 0.67380442 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-1.118457
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 0 3 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 2
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+1 7 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.84472078 0.53520726 
+0.84505338 0.53468194 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.83932981 -0.83933454 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.069923705
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+7 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.013202312
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.45247289
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.069923705
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+7 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.013202312
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.45232842
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+1 1 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.84472078 0.53520726 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.83932981
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 1 
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 7 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 1
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+2 6 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.74320675 0.66906182 
+0.73817415 0.67461021 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-1.3111298 -1.31113 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.013202312
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+6 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+2 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.013202312
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+6 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+2 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+0 0 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.74320675 0.66906182 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-1.3111298
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 6 
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 2 
+
+
+[DEBUG][106:GuidedRandomForest.cpp]:[fit] Growing tree 3
+[DEBUG][583:HashTree.hpp]:[fit] Selected dims 0 1 
+[DEBUG][525:HashTree.hpp]:[__hash] Root partition description 
+min values 0.0871293 0.020218397 
+max values 0.94466892 0.92559664 
+mean values 0.52101579 0.62614181 
+probs 0.5 0.5 
+region indexes 0 1 2 3 4 5 6 7 8 9 
+impurities 5
+roi 0.74525209
+height 0
+
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 1
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+0 1 2 3 4 5 6 7 8 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.68003976 0.73317523 
+0.86660351 0.49899735 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.81338312 -0.76395722 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.74525209
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 5 8 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 3 4 6 7 9 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.74525209
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 3 5 8 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 4 6 7 9 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+4.7619048 5 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.68003976 0.73317523 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.81338312
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 2
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+0 2 3 4 6 7 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.62641833 0.77948706 
+0.50412498 0.86363071 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.97566225 -0.95998391 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.53739657
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.37648346
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+0 2 3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 6 9 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.52190513
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.37648346
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+0 3 7 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+2 4 6 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+4.1666667 4.6666667 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.62641833 0.77948706 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.97566225
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 3
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+0 2 3 7 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.64924099 0.76058276 
+0.67073849 0.74169393 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.89589944 -0.89405016 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.45875537
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31182666
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.18741549
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 6 9 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.45835353
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31182666
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+0 2 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.19108941
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 6 9 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+3.6666667 3.6666667 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.64924099 0.76058276 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.89589944
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 0 2 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 3
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+1 5 8 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.82829898 0.56028635 
+0.68882096 0.7249315 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.40956566 -0.43416331 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+5 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+1 8 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.65575603
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.43128422
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.40564642
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+5 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+1 8 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.65183573
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.42738023
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+3.3333333 3.3333333 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.82829898 0.56028635 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.40956566
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 5 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 3
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+4 6 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.74345715 0.66878357 
+0.75436891 0.65645072 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-1.084347 -1.0831526 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+4 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+6 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.22567953
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.48218138
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.31791537
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+4 9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+6 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.22576072
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 7 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.48392726
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+3 3 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.74345715 0.66878357 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-1.084347
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 6 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 3
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+3 7 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.63575247 0.771893 
+0.72945434 0.68402951 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.85959031 -0.85994078 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+7 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.2383049
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 8 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.17990167
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 9 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.26546321
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+3 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+7 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.25431056
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.18683446
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 9 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+2 2 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.63575247 0.771893 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.85959031
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 3 
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 7 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 2
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+1 8 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.66014391 0.75113915 
+0.41102341 0.91162479 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-0.61833645 -0.62107769 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+8 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+1 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.42458414
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.2391475
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+1 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+8 
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0.34956599
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+1 1 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.66014391 0.75113915 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-0.61833645
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 8 
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 1 
+[DEBUG][546:HashTree.hpp]:[__hash] Total impure regions 1
+[DEBUG][547:HashTree.hpp]:[__hash] Most impure region samples 
+4 9 
+[DEBUG][445:HashTree.hpp]:[__splitRegionGlobally] Generated weights 
+0.81966703 0.57284025 
+0.64737483 0.76217178 
+[DEBUG][447:HashTree.hpp]:[__splitRegionGlobally] Generated biases 
+-1.0345381 -1.0412472 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 1
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+4 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+9 
+[DEBUG][283:HashTree.hpp]:[__chooseBestPlane] Running trial 2
+[DEBUG][306:HashTree.hpp]:[__chooseBestPlane] Region roi 0.27607001
+[DEBUG][307:HashTree.hpp]:[__chooseBestPlane] plane to mean dist 0
+[DEBUG][349:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 0
+9 
+[DEBUG][351:HashTree.hpp]:[__chooseBestPlane] Splitted indexes with 1
+4 
+[DEBUG][394:HashTree.hpp]:[__chooseBestPlane] Computed Impurities 
+0 0 
+[DEBUG][401:HashTree.hpp]:[__chooseBestPlane] Selected weights 
+0.81966703 0.57284025 
+[DEBUG][403:HashTree.hpp]:[__chooseBestPlane] Selected bias 
+-1.0345381
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 1 0 
+For samples 4 
+[DEBUG][115:HashTree.hpp]:[__fillRegions] Probabilities as leaf node 0 1 
+For samples 9 
+
+
+[DEBUG][125:GuidedRandomForest.cpp]:[predict] Testing tree 1
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 1
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63877462 0.76939391 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97606924
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.51919297 0.85465704 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89264791
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 2
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73089797 0.68248675 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.42935279
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63185294 0.77508829 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.62169163
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 3
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63877462 0.76939391 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97606924
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.51919297 0.85465704 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89264791
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 4
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63877462 0.76939391 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97606924
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.51919297 0.85465704 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89264791
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.75402491 0.65684582 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.857436
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 5
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63877462 0.76939391 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97606924
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.75859392 0.6515637 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.0826037
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68353556 0.72991721 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.0452542
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 6
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73089797 0.68248675 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.42935279
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 7
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63877462 0.76939391 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97606924
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.75859392 0.6515637 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.0826037
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 8
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63877462 0.76939391 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97606924
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.51919297 0.85465704 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89264791
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.75402491 0.65684582 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.857436
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 9
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73089797 0.68248675 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.42935279
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63185294 0.77508829 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.62169163
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 10
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63877462 0.76939391 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97606924
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.75859392 0.6515637 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.0826037
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68353556 0.72991721 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.0452542
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][125:GuidedRandomForest.cpp]:[predict] Testing tree 2
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 1
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73890974 0.67380442 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.118457
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 2
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.84472078 0.53520726 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.83932981
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 3
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73890974 0.67380442 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.118457
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.74320675 0.66906182 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.3111298
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 4
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73890974 0.67380442 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.118457
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 5
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 6
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 7
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73890974 0.67380442 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.118457
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.74320675 0.66906182 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.3111298
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 8
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.84472078 0.53520726 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.83932981
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 9
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 10
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][125:GuidedRandomForest.cpp]:[predict] Testing tree 3
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 1
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.62641833 0.77948706 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97566225
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.64924099 0.76058276 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89589944
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 2
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.82829898 0.56028635 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.40956566
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.66014391 0.75113915 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.61833645
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 3
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.62641833 0.77948706 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97566225
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.64924099 0.76058276 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89589944
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 4
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.62641833 0.77948706 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97566225
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.64924099 0.76058276 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89589944
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63575247 0.771893 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.85959031
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 5
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.62641833 0.77948706 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97566225
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.74345715 0.66878357 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.084347
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.81966703 0.57284025 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.0345381
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 6
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.82829898 0.56028635 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.40956566
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 7
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.62641833 0.77948706 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97566225
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.74345715 0.66878357 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.084347
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 8
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.62641833 0.77948706 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97566225
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.64924099 0.76058276 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89589944
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63575247 0.771893 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.85959031
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 9
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.82829898 0.56028635 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.40956566
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.66014391 0.75113915 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.61833645
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 10
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.62641833 0.77948706 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97566225
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.74345715 0.66878357 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.084347
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.81966703 0.57284025 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.0345381
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][132:GuidedRandomForest.cpp]:[predict]Prediction 
+3 0 
+3 0 
+3 0 
+3 0 
+3 0 
+0 3 
+0 3 
+0 3 
+0 3 
+0 3 
+[DEBUG][125:GuidedRandomForest.cpp]:[predict] Testing tree 1
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 1
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73089797 0.68248675 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.42935279
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63185294 0.77508829 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.62169163
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 2
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73089797 0.68248675 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.42935279
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 3
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63877462 0.76939391 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97606924
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.51919297 0.85465704 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89264791
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.75402491 0.65684582 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.857436
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 4
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73089797 0.68248675 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.42935279
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63185294 0.77508829 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.62169163
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 5
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.69899491 0.71512665 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81195808
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73089797 0.68248675 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.42935279
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63185294 0.77508829 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.62169163
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][125:GuidedRandomForest.cpp]:[predict] Testing tree 2
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 1
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73890974 0.67380442 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.118457
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 2
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 3
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.73890974 0.67380442 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -1.118457
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 4
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 5
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.18372424 0.98297782 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.72502053
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.7597053 0.65026753 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.69686328
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][125:GuidedRandomForest.cpp]:[predict] Testing tree 3
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 1
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.82829898 0.56028635 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.40956566
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.66014391 0.75113915 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.61833645
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 2
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.82829898 0.56028635 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.40956566
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.66014391 0.75113915 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.61833645
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 3
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.62641833 0.77948706 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.97566225
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.64924099 0.76058276 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.89589944
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.63575247 0.771893 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.85959031
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 4
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.82829898 0.56028635 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.40956566
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.66014391 0.75113915 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.61833645
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 1 0 
+[DEBUG][605:HashTree.hpp]:[predictProba] Testing Sample 5
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.68003976 0.73317523 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.81338312
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.82829898 0.56028635 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.40956566
+[DEBUG][614:HashTree.hpp]:[predictProba] Using weights 0.66014391 0.75113915 
+[DEBUG][616:HashTree.hpp]:[predictProba] Using bias -0.61833645
+[DEBUG][632:HashTree.hpp]:[predictProba] Found probabilities 0 1 
+[DEBUG][132:GuidedRandomForest.cpp]:[predict]Prediction 
+3 0 
+0 3 
+1 2 
+2 1 
+0 3 
+
+data
+[[0.5488135  0.71518937 0.60276338]
+ [0.54488318 0.4236548  0.64589411]
+ [0.43758721 0.891773   0.96366276]
+ [0.38344152 0.79172504 0.52889492]
+ [0.56804456 0.92559664 0.07103606]
+ [0.0871293  0.0202184  0.83261985]
+ [0.77815675 0.87001215 0.97861834]
+ [0.79915856 0.46147936 0.78052918]
+ [0.11827443 0.63992102 0.14335329]
+ [0.94466892 0.52184832 0.41466194]]
+
+labels
+[0 0 0 0 0 1 1 1 1 1]
+
+Train Predictions
+[0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+
+Test data
+[[0.26455561 0.77423369 0.45615033]
+ [0.56843395 0.0187898  0.6176355 ]
+ [0.61209572 0.616934   0.94374808]
+ [0.6818203  0.3595079  0.43703195]
+ [0.6976312  0.06022547 0.66676672]]
+
+Test labels
+[0 0 1 1 1]
+
+Test Predictions
+[0, 1, 1, 0, 1]
